@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["ES2021", "DOM"],
+    "baseUrl": "../ui.frontend",
+    "outDir": "./dist",
+    "removeComments": true,
+    "allowJs": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "types": ["jest"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/main/webpack/Vue/*"],
+    },
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue"],
+}
